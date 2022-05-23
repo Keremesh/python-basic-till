@@ -1,0 +1,14 @@
+type_of_chocolate = str(input("Please input the item "))
+
+chocolates = {"white":"1.50",
+              "milk": "1.20",
+              "dark": "1.80",
+              "vegan": "2.00"}
+
+# Option 1
+x=chocolates.get("white")
+print(x)
+# Option 2
+print("The price for", (type_of_chocolate), "chocolate is",chocolates.get(type_of_chocolate))
+# Option 3
+print("The price is: ", chocolates[type_of_chocolate])
